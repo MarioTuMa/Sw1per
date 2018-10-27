@@ -12,8 +12,20 @@ function wait(ms){
      end = new Date().getTime();
   }
 }
+function shorten(line){
+   if(line.length>30){
+     line=line.slice(0,75)+"..."
 
+   }
+  return line
+}
+function getSelector(url){
+  if(url.split("amazon.com").length>1){
+    selector="#price_inside_buybox"
+    return selector
+  }
 
+}
 
 
 
@@ -107,7 +119,7 @@ router.get('/dashboard', function (req, res, next) {
           for(i=0;i<user.links.length;i++){
             var newlink= user.links[i]
             //console.log(newlink)
-            middle=middle+'<div class="event"> <div class="event"> <i class="ion ion-ios-flame done"></i> <h4 class="event__point">'+newlink.url+'</h4> <span class="event__duration">last updated 1secago</span> <p class="event__description"> Current Price: '+newlink.lastPrice+' </p> </div> </div>'
+            middle=middle+'<div class="event"> <div class="event"> <i class="ion ion-ios-flame done"></i> <h4 class="event__point"><a href="'+newlink.url+'">'+shorten(newlink.url)+'</a></h4><p class="event__description"> Current Price: '+newlink.lastPrice+' </p> </div> </div>'
           }
           end_of_page='</div> <button class="add-event-button"> <span class="add-event-button__title"><a href="http://localhost:3000/newlink"/>Add Website</a></span> <span class="add-event-button__icon"> <i class="ion ion-ios-star-outline"></i> </span> </button> </div> </section></div><br><br> <script src="js/dash.js"></script></body></html>'
           return res.send(start_of_page+middle+end_of_page)
@@ -166,10 +178,7 @@ router.post('/newlink', function (req, res, next) {
               return cheerio.load(body);
             }
           };
-          if(req.body.url.split("amazon.com").length>1){
-            selector="#price_inside_buybox"
-            console.log(selector)
-          }
+          selector=getSelector(user.url)
           rp(options)
 
             .then(($) => {
