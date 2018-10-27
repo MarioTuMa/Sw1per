@@ -35,7 +35,7 @@ html, body {
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: 500px;
-  background: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  background: radial-gradient(circle at 0% 0%, #373b52, #252736 51%, #1d1e26);
 }
 .form-structor .signup {
   position: absolute;

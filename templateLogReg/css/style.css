@@ -27,7 +27,7 @@ html {
 body {
   font-family: 'Lato', sans-serif;
   margin: 0;
-  background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  background: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
   background-size:     cover;                      /* <------ */
   background-repeat:   no-repeat;
   background-position: center center;              /* optional, center the image */
@@ -107,9 +107,7 @@ a.btn:hover {
 .cover  {
   height: 100vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.05)), to(rgba(0,0,0,0)));
-  background: -webkit-linear-gradient(top, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0) 100%);
-  background: linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0) 100%);
+  background: radial-gradient(circle at 0% 0%, #373b52, #252736 51%, #1d1e26);
   padding: 20px 50px;
   display: -webkit-box;
   display: flex;

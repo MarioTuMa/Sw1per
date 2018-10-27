@@ -31,7 +31,7 @@ body {
 	color: #fff;
   font-family: 'Lato', sans-serif;
   font-size: 14px;
-	background: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+	background: radial-gradient(circle at 0% 0%, #373b52, #252736 51%, #1d1e26);
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
@@ -74,7 +74,7 @@ body {
 }
 
 #main{
-  background: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  background: radial-gradient(circle at 0% 0%, #373b52, #252736 51%, #1d1e26);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 50px;
@@ -177,7 +177,7 @@ body {
 }
 
 .today-box {
-  background: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  background: radial-gradient(circle at 0% 0%, #373b52, #252736 51%, #1d1e26);
   color: #FFF;
   padding: 37px 40px;
   position: relative;
@@ -186,7 +186,7 @@ body {
 }
 .today-box::before {
   content: "";
-  background: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  background: radial-gradient(circle at 0% 0%, #373b52, #252736 51%, #1d1e26);
   opacity: 0.4;
   z-index: -1;
   display: block;
@@ -246,7 +246,7 @@ body {
   color: #777;
   width: 45px;
   height: 45px;
-  border: 6px solid #2cb5e8;
+  border: 6px solid #EA575C;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -402,7 +402,7 @@ body {
   margin-left: auto;
   border: 0;
   padding: 0;
-  background: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  background: radial-gradient(circle at 0% 0%, #EA575C, #E8725E 51%, #D87D57);
   border-radius: 50px;
   cursor: pointer;
   box-shadow: 0px 0px 40px -9px #485fed;
