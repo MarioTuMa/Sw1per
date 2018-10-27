@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sw1per</title>
+
+
+  <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+  <div class="container">
+
+  <header>
+    <h2><a href="index.html"><img src="Sw1perTransparent.png" alt="Sw1per Logo" height="120px" width="120px"></h2>
+    <nav>
+      <ul>
+        <li>
+          <a href="dashboard" title="dash">Dashboard</a>
+        </li>
+        <li>
+          <a href="pricing.html" title="Pricing">Pricing</a>
+        </li>
+        <li>
+          <a href="#" title="About">About Us</a>
+        </li>
+        <li>
+          <a class="btn" href="signup.html" title="Register / Log In">Register/Log In</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="cover">
+    <h1>Monitor Any Page.</h1>
+    <form  class="flex-form">
+      <label for="from">
+        <i class="ion-code-working"></i>
+      </label>
+      <input id="monitor" type="search" placeholder="What do you want to monitor?">
+      <input id="search" type="submit" value="Search" onclick="getpage()">
+    </form>
+  </div>
+
+</div>
+
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script type="text/javascript">
+  function getpage(){
+    var value = $('#monitor').val();
+    console.log(value);
+    alert('test')
+  }
+</script>
+
+
+
+</body>
+
+</html>

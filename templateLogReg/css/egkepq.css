@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:300,400,400i,500,700,700i);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5; /*make the line height one and a half times more than the font size.*/
+  font-family: 'Fira Sans', sans-serif;
+  color: #333;
+}
+
+a[href]:not([class]) {
+  /* color: #999; */
+  text-decoration: none;
+  transition: all ease-in-out .3s;
+}
+
+p {
+  display: inline-block;
+  box-decoration-break: clone;
+  -o-box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
